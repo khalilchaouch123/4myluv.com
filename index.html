@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>4 My Luv</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="Images/4Umalak.PNG" class="logo">
+                <ul>
+                    <li>
+                        <a href = "https://www.instagram.com/_whosmalak/">Her Instagram Here</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="left-col">
+                    <h1>THIS <br>IS<br> 4 U !</h1>
+                    </div>
+                </div>
+
+                <div class="right-col">
+                   <p>Ur fav SONG!</p> 
+                   <img src="Images/play-button (1).png" id="icon">
+                </div>
+                <div class="center-col">
+                    <h1>I<br> LOVE<br> YOU</h1>
+                </div>
+            </div>
+            
+
+
+
+            
+        </div>
+
+        <audio id="MySong">
+            <source src="Images/louis-tomlinson-two-of-us-official-video.mp3" type="audio/mp3">
+        </audio>
+
+        <script>
+            var MySong = document.getElementById("MySong");
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function(){
+                    if(MySong.paused){
+                        MySong.play();
+                        icon.src ="Images/bouton-pause (1).png";
+                    }else{
+                        MySong.pause();
+                        icon.src="Images/play-button (1).png";
+                    }
+                }
+            
+        </script>
+    </body>
+</html>
